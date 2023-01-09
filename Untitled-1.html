@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="untitled-2"
+    <title>Document</title>
+</head>
+<body>
+    <h1>les formulaire</h1>
+    <form method="post" action="traitement.php"></form>
+    <fieldset>
+        <legend>information de votre bien</legend>
+    
+ vous etes vendeur ou acheteur?<br><br>
+    <input type="checkbox" name="vendeur" value="vendeur" id="vendeur">
+    <label for="vendeur">vendeur</label><br>
+    <input type="checkbox" name="acheteur" value="acheteur" id="acheteur">
+    <label for="acheteur">acheteur</label><br>
+    
+    <br>le type de votre bien?
+    <select name="type de votre bien">
+      <option value="appartement" selected ="selected">appartement</option>
+      <option value="maison">maison</option><br>
+    </select><br>
+    <label for="m²">m² de votre bien en questions</label>
+    <input type="number" name="m²" id="m²"><br>
+    <label for="number">combien de pieces</label>
+   <input type="number" name="nombre" id="nombre" min="1" max="20"><br>
+</fieldset>
+
+   <!--  buda kutucuk yuvarlak sekli 
+    acheteur au vendeur?<br>
+    <input type="radio" id="vendeur" name="vendeur" value="vendeur">
+    <label for="vendeur">un vendeur </label><br>
+    <input type="radio" id="acheteur" name="acheteur" value="acheteur">
+    <label for="acheteur">  un acheteur</label><br><br>-->
+
+    
+    
+    
+    
+    <br><br><br>
+ <fieldset>
+     <legend>information personelle</legend>
+    <label for="nom">nom</label>
+    <input type="text" name="nom" id="nom" autofocus="autofocus"><br>
+    <label for="prenom">prenom </label>
+    <input type="text" id="prenom" name="prenom"autocomplete="on" placeholder="ex mevlut"><br>
+    <label for="pass">entre mot de passe</label>
+    <input type="pass" name="password" id="password"><br>
+    <label for="naissance">votre date de naissance</label>
+    <input type="date" id="naissance" name="naissance"><br>
+    <label for="email">entre votrre ameil</label>
+    <input type="email" id="email" name="email"><br>
+    <label for="site">entrez votre url</label>
+    <input type="url" id="site" name="site"><br>
+    <label for="tel"> entrez un numero</label>
+    <input type="number" id="tel" name="tel"><br>
+
+    <label for="description"> parler nous de votre maison </label>
+    <textarea id="prez" name="presentation"></textarea><br>
+    <input type="file" id="monfichier" name="montfichier" accept="ne yazicam"> 
+ </fieldset>
+    <input type="submit" value="envoyer">
+
+    <!-- bu fazladan ilerde lzim olabilir <label for="prenom">entrez votrre prenom</label>
+    <input type="text" name="prenom" id="prenom" autocomplete="on" placeholder="ex mevlut"><br>-->
+
+    
+    </form>
+    
+</body>
+</html>
