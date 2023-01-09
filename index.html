@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <header>
+        <a href="#" class="logo"><span>mev</span>immo</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#services">services</a>
+            <a href="#featured">featured</a>
+            <a href="#agents">agents</a>
+            <a href="#contact">contact</a>
+            
+        </nav>
+        <div class="icons">
+            <div id="menu-bars" class="fa-bars"></div>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-user"></a>
+       
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <form action="">
+            <h3>find your perfect home</h3>
+            <div class="buttons-container">
+                <a href="#" class="btn">for rent</a>
+                <a href="#" class="btn"> for sell</a>
+            </div>
+           <div class="inputBox">
+               <input type="search" name="" placeholder="neighborhood"  id="">
+               <input type="search" name="" placeholder="city"  id="">
+               <select name=" " id"">
+                   <option value="" disabled  hidden selected>minimum price</option>
+                   <option value="$5">$5</option>
+                   <option value="$10">$10</option>
+                   <option value="$15">$15</option>
+                   <option value="$115">$115</option>
+                   <option value="$500">$500</option>
+
+                </select>
+            <select name=" " id"">
+                <option value="" disabled  hidden selected>minimum price</option>
+                <option value="$5000">$5000</option>
+                <option value="$5000">$10000</option>
+                <option value="$5000">$150000</option>
+                <option value="$5000">$1150000</option>
+                <option value="$5000">$50000000</option>
+
+            </select>
+               <select name="" id"">
+                <option value="" disabled  hidden selected>property status</option>
+                <option value="Ready To move">Ready To Move</option>
+                <option value="Under construction">Under Construction</option>
+                <option value="Furnnished">Furnnished</option>
+                <option value="semi-Furnished">semi-Furnished</option>
+                <option value="unfurnished">unfurnished</option>
+
+            </select> 
+
+            <select name="" id"">
+             <option value="" disabled  hidden selected>property type</option>
+             <option value="flat">flat</option>
+             <option value="house">house</option>
+             <option value="shop">shop</option>
+             <option value="warehouse">warehouse</option>
+             <option value="land">land</option>
+            </select>
+            
+            <select name="" id"">
+             <option value=""disabled  hidden selected>BHK</option>
+             <option value="1 BHK">1 BHK </option>
+             <option value="2 BHK">2 BHK </option>
+             <option value="3 BHK">3 BHK </option>
+             <option value="4 BHK">4 BHK </option>
+             <option value="5 BHK">5 BHK </option>
+            
+            </select>
+            
+             <select name="" id"">
+                <option value=""disabled  hidden selected>amities</option>
+                <option value="parking space">parking space </option>
+                <option value="swing pool">swing pool </option>
+                <option value="playgroud">playgroud</option>
+                <option value="security">security</option>
+                <option value="all">all </option>
+                
+            </select>
+            <select name="" id"">
+                <option value=""disabled  hidden selected>Bedrooms</option>
+                <option value="1 bedroom">1 bedroom  </option>
+                <option value="2 bedroom">2 bedroom </option>
+                <option value="3 bedroom">3 bedroom </option>
+                <option value="4 bedroom">4 bedroom </option>
+                <option value="5 bedroom">5 bedromm </option>
+                
+            </select>
+            <select name="" id"">
+                <option value=""disabled  hidden selected>bathroom</option>
+                <option value="1 bathroom">1 bathroom  </option>
+                <option value="2 bathroom">2 bathroom  </option>
+                <option value="3 bathroom">3 bathromm </option>
+                <option value="4 bathromm">4 bathromm </option>
+                <option value="5 bathroom">5 bathroom</option>
+                
+            </select>
+
+
+            </div>
+            <input type="submit" value="search property" class="btn">
+            
+        </form>
+    </section>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+    <script>
+        let menu = document.querySelector('menu-bars');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () =>{
+            navbar.classList.toggle('active');
+            menu.classList.toggle('fa-times');
+        }
+        window.onscroll = () =>{
+            navbar.classList.remove('active');
+            menu.classList.remove('fa-times');
+        }
+    </script>
+
+</body>
+</html>

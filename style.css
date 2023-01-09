@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;500;700&family=Open+Sans:ital,wght@1,300;1,600&display=swap');
+
+
+:root{
+    --red:#ff5a3c;
+    --light-red:f9edeb;
+    
+}
+*{
+    font-family: 'Nunito', sans-serif ;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+   
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+
+}
+body{
+    background: #f7f7f7;
+}
+section{
+    padding: 2rem 9%;
+}
+
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+    background: #fff;
+    padding: 2rem 9%;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+
+}
+header .logo{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color:#333;
+
+}
+
+header .logo span{
+    color:var(--red)
+}
+header .navbar a{
+    color: #333;
+    font-size: 2rem;
+    padding: 0 1.5rem;
+
+}
+header .navbar a:hover{
+    color:var(--red);
+
+}
+header .icons #menu-bars,
+header .icons a{
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width:5rem;
+    font-size: 2rem;
+    margin-right: .5rem;
+    border-radius:.5rem;
+    color:var(--red);
+    background: var(--light-red);
+    text-align:center ;
+    
+}
+header .icons #menu-bars:hover,
+header .icons a:hover{
+    background-color: var(--red);
+    color: #fff;
+}
+header .icons #menu-bars{
+    display: none;
+}
+.home{
+    min-height: 100vh;
+    background: url(../site\ immobilier/téléchargement.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+    html{
+        font-size: -62.5%;
+
+    }
+    header{
+        padding: 1.5rem 1rem ;
+
+    }
+}    
+@media (max-width:768px){
+    header .icons #menu-bar{
+        display:inline-block;
+
+    }
+    header .navbar{
+        position: absolute;
+        left: 0; right: 0; top: 100%;
+        background: #f7f7f7;
+        border-top: .1rem solid #333;
+        border-bottom: .1rem solid #333;
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 0 0);
+    }
+    header .navbar.acive{
+        clip-path: polygon(0 0, 100% 0, 100% 100% 0% 100%);
+    }
+
+    header .navbar a{
+        display:block;
+        padding: 1.5rem;
+        margin: 1.5rem;
+        background: #fff;
+        border:#333 solid rgb(177, 56, 56);
+        box-shadow:0.5rem 1rem rgba(0,0,0,.1);
+        border-radius:.5rem;
+ 
+    }
+}
+@media (max-width:491px){
+    html{
+        font-size:50.5%;
+
+    }
+    header{
+        padding: 1.5rem 1rem ;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
